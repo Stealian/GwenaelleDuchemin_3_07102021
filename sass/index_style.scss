@@ -80,7 +80,7 @@ body {
   flex-direction: column;
 }
 
-/* locaisation */
+/* localisation */
 .localisation {
   @include flexbox-center();
   background: #f3f3f3;
@@ -271,3 +271,5 @@ body {
       }
   }
 }
+/* FOOTER */
+@include footer.scss;

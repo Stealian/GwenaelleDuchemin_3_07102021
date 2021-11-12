@@ -72,7 +72,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
-/* locaisation */
+/* localisation */
 .localisation {
     display: flex;
     justify-content: center;
@@ -277,4 +277,48 @@ body {
 .restaurant__block .heart-empty:hover {
     opacity: 0;
     transition: 0.5s;
+}
+/* FOOTER */
+.footer {
+    width: 100%;
+    background-color: #353535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__bloc {
+    display: inline;
+    padding: 0 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+.footer__bloc .logo {
+    font-family: 'Shrikhand', cursive;
+    color: white;
+    font-size: 20px;
+    padding: 15px 0;
+}
+.footer__bloc-links {
+    display: inline-flex;
+    flex-direction: column;
+    width: auto;
+}
+.footer__bloc-link {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+}
+.footer__bloc-link:hover .footer__bloc-link__title {
+    text-decoration: underline;
+}
+.footer__bloc-link i {
+    margin-right: 7px;
+}
+.footer__bloc-link__title {
+    font-size: 16px;
+    font-weight: 400;
 }
