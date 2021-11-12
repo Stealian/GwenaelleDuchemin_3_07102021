@@ -1,0 +1,118 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #f6f6f6;
+}
+* a {
+    text-decoration: none;
+    color: white;
+}
+.main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* loader */
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+}
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid #fcf;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+    0% {
+        top: 2.25rem;
+        left: 2.25rem;
+        width: 0;
+        height: 0;
+        opacity: 1;
+   }
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 4.5rem;
+        height: 4.5rem;
+        opacity: 0;
+   }
+}
+.header {
+    box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.20);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+}
+.header__title {
+    font-family: 'Shrikhand', cursive;
+    margin: 0;
+    color: black;
+}
+.main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f3f3;
+    color: #7a7a7a;
+}
+.localisation__city {
+    margin-left: 1rem;
+    font-weight: 400;
+}
+.introduction {
+    background: #fafafa;
+    width: 100%;
+}
+.introduction__container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+.introduction__title {
+    text-align: center;
+    max-width: 250px;
+    margin: 0;
+}
+.introduction__text {
+    text-align: center;
+}
+.introduction__btn {
+    opacity: 1;
+    background: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+    color: white;
+    padding: 0 20px;
+    border-radius: 200px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.introduction__btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
