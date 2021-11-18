@@ -201,6 +201,36 @@ body {
   align-items: flex-start;
 }
 
+.restaurant {
+  /*
+      &-hearth {
+          @include flexbox-center;
+          margin-right: 20px;
+          width: 30px;
+      }
+      .heart {
+          width: 30px;
+          stroke-width: 30;
+          stroke: black;
+          fill: white;
+          cursor: pointer;
+        }
+        .heart-full {
+        position: absolute;
+        fill: url(#text-fill);
+        stroke: none;
+      }
+      .heart-empty {
+          width: 50px;
+          position: relative; 
+          &:hover {
+            opacity: 0;
+            transition: 0.5s;
+          }
+      }
+  }
+  */
+}
 .restaurant__cards {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
@@ -264,32 +294,32 @@ body {
 .restaurant__block-info > :first-child {
   font-weight: 700;
 }
-.restaurant__block-hearth {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
-  width: 30px;
-}
-.restaurant__block .heart {
-  width: 30px;
-  stroke-width: 30;
-  stroke: black;
-  fill: white;
-  cursor: pointer;
-}
-.restaurant__block .heart-full {
+.restaurant .restaurant__heart i {
   position: absolute;
-  fill: url(#text-fill);
-  stroke: none;
+  padding-top: 50px;
+  color: #333;
 }
-.restaurant__block .heart-empty {
-  width: 50px;
-  position: relative;
+.restaurant .restaurant__heart .far.fa-heart {
+  color: #333;
+  font-size: 30px;
+  opacity: 1;
+  transition: 0.2s ease-out;
 }
-.restaurant__block .heart-empty:hover {
-  opacity: 0;
-  transition: 0.5s;
+@media (max-width: 991px) {
+  .restaurant .restaurant__heart .far.fa-heart {
+    font-size: 26px;
+  }
+}
+.restaurant .restaurant__heart .far.fa-heart:hover {
+  animation: 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 /* FOOTER */

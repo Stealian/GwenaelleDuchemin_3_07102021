@@ -224,7 +224,7 @@ body {
               border-radius: 20px 20px 0 0;
           }
       }
-  }
+  }  
   &__block {
       background: white;
       display: flex;
@@ -240,6 +240,8 @@ body {
               font-weight: 700;
           }
       }
+    }
+      /*
       &-hearth {
           @include flexbox-center;
           margin-right: 20px;
@@ -265,6 +267,36 @@ body {
             transition: 0.5s;
           }
       }
+  }
+  */
+  .restaurant__heart{
+    i{
+      position: absolute;
+      padding-top: 50px;
+      color: #333;
+    }
+    .far.fa-heart {
+      color: #333;
+      font-size: 30px;
+      opacity: 1;
+      transition: 0.2s ease-out;
+
+      @media (max-width:991px){
+        font-size: 26px;
+      }
+
+      &:hover {
+        animation:  0.3s ease-in-out;
+        display: inline-block;
+        opacity: 1;
+        background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+      }
+  }
   }
 }
 /* FOOTER */
