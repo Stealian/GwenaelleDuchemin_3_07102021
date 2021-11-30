@@ -21,7 +21,22 @@ body {
 }
 
 /* loader */
-.lds-ripple {
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: white;
+  animation: loader 0.05s;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  /*z-index: 10000;*/
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  .lds-ripple {
     display: inline-block;
     position: relative;
     width: 5rem;
@@ -53,6 +68,7 @@ body {
       opacity: 0;
     }
   }
+}
 
 /* HEADER */
 .header {
@@ -273,28 +289,8 @@ h2{
           color: #333;
         }
 
-         .far.fa-heart {
-           color: #333;
-            font-size: 30px;
-            opacity: 1;
-            transition: 0.2s ease-out;
-
-            @media (max-width:991px){
-              font-size: 26px;
-            }
-
-            &:hover {
-              animation:  0.3s ease-in-out;
-              display: inline-block;
-              opacity: 1;
-              background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-              background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-              background-clip: border-box;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              font-weight: bold;
-            }
-        }
+        @import "heart.scss";
+         
       }
 
     }
