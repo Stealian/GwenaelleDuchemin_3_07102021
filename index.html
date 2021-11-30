@@ -72,187 +72,55 @@
             </div>
         </section>
         <!-- liste restaurant-->
-        <section class="restaurants">
-        <h2 class="restaurants__title">Restaurants</h2>
-            <div class="restaurant__cards">
-                <!-- r1_palette du gout-->
-                <a href="pages/la-palette-du-gout.html">
-                    <div class="restaurant__card">
-                        <div class="restaurant__card-image">
-                            <div class="restaurant__card-new"><p>Nouveau</p></div>
-                            <img src="Images-Maquettes/images/restaurants/la_palette_du_gout.jpg" alt="La palette du goût">
+        <section class="restaurants" id="restaurants">
+            <h2>Restaurants</h2>
+            <div class="restaurants_container">
+                <!-- r1_la palette du gout-->
+                <div class="restaurants-cards">
+                    <a href="pages/la-palette-du-gout.html">
+                        <img src="Images-Maquettes/images/restaurants/la_palette_du_gout.jpg" alt="La palette du goût">
+                        <span>Nouveau</span>
+                        <div class="description">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                            <i class="far fa-heart"></i>
                         </div>
-                        <div class="restaurant__block">
-                            <div class="restaurant__block-info">
-                                <div class="restaurant__block-name">La palette du goût</div>
-                                <div class="restaurant__block-city">Ménilmontant</div>
-                            </div>
-                            <!--
-                            <div class="restaurant__block-hearth">
-                                <svg class="heart heart-full" viewBox="-20 0 550 550"  xml:space="preserve">
-                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
-                                     c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
-                                     c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
-                                     s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
-                                     C512,93.417,453.532,30,376,30z"/>
-                                     <defs>
-                                        <linearGradient id="text-fill">
-                                            <stop offset="0%" stop-color="#9356DC" />
-                                            <stop offset="100%" stop-color="#FF79DA" />
-                                        </linearGradient>
-                                    </defs>  
-                                </svg>
-                                <svg class="heart heart-empty" viewBox="-20 0 550 550"  xml:space="preserve">
-                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
-                                    c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
-                                    c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
-                                    s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
-                                    C512,93.417,453.532,30,376,30z"/>
-                                    <defs>
-                                        <linearGradient>
-                                            <stop offset="0%" stop-color="#9356DC" />
-                                            <stop offset="100%" stop-color="#FF79DA" />
-                                        </linearGradient>
-                                    </defs>    
-                                </svg>
-                            </div>
-                        -->
-                            <div class="heart">
-                                <i class="far fa-heart"></i>
-                            </div>
+                    </a>
+                </div>
+                <!-- r2_note enchantée-->
+                <div class="restaurants-cards">
+                    <a href="pages/la-note-enchantee.html">
+                        <img src="Images-Maquettes/images/restaurants/la_note_enchantee.jpg" alt="La note enchantée">
+                        <span>Nouveau</span>
+                        <div class="description">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                            <i class="far fa-heart"></i>
                         </div>
-                    </div>
-                </a>
-                <!-- r2_note enchentée-->
-                <a href="pages/la-note-enchantee.html">
-                    <div class="restaurant__card">
-                        <div class="restaurant__card-image">
-                            <img src="Images-Maquettes/images/restaurants/la_note_enchantee.jpg" alt="La note enchantée">
-                            <div class="restaurant__card-new"><p>Nouveau</p></div>
-                        </div>
-                        <div class="restaurant__block">
-                            <div class="restaurant__block-info">
-                                <div class="restaurant__block-name">La note enchantée</div>
-                                <div class="restaurant__block-city">Charonne</div>
-                            </div>
-                            <div class="restaurant__block-hearth">
-                                <svg class="heart heart-full" viewBox="-20 0 550 550"  xml:space="preserve">
-                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
-                                        c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
-                                        c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
-                                        s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
-                                        C512,93.417,453.532,30,376,30z"/>
-                                    <defs>
-                                        <linearGradient>
-                                            <stop offset="0%" stop-color="#9356DC" />
-                                            <stop offset="100%" stop-color="#FF79DA" />
-                                        </linearGradient>
-                                    </defs> 
-                                </svg>
-
-                                <svg class="heart heart-empty" viewBox="-20 0 550 550"  xml:space="preserve">
-                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
-                                        c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
-                                        c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
-                                        s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
-                                        C512,93.417,453.532,30,376,30z"/>
-                                    <defs>
-                                        <linearGradient>
-                                            <stop offset="0%" stop-color="#9356DC" />
-                                            <stop offset="100%" stop-color="#FF79DA" />
-                                        </linearGradient>
-                                    </defs>                                   
-                                </svg>
-                            </div>     
-                        </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
                 <!-- r3_a la française-->
-                <a href="pages/a-la-francaise.html">
-                    <div class="restaurant__card">
-                        <div class="restaurant__card-image">
-                            <img src="Images-Maquettes/images/restaurants/a_la_francaise.jpg" alt="À la française">
+                <div class="restaurants-cards">
+                    <a href="pages/a-la-française.html">
+                        <img src="Images-Maquettes/images/restaurants/a_la_francaise.jpg" alt="À la française">
+                        <div class="description">
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
+                            <i class="far fa-heart"></i>
                         </div>
-                        <div class="restaurant__block">
-                            <div class="restaurant__block-info">
-                                <div class="restaurant__block-name">À la française</div>
-                                <div class="restaurant__block-city">Cité Rouge</div>
-                            </div>
-                            <div class="restaurant__block-hearth">
-                                <svg class="heart heart-full" viewBox="-20 0 550 550"  xml:space="preserve">
-                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
-                                        c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
-                                        c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
-                                        s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
-                                        C512,93.417,453.532,30,376,30z"/>
-                                    <defs>
-                                        <linearGradient>
-                                        <stop offset="0%" stop-color="#9356DC" />
-                                        <stop offset="100%" stop-color="#FF79DA" />
-                                        </linearGradient>
-                                    </defs>                                   
-                                </svg>
-                    
-                                <svg class="heart heart-empty" viewBox="-20 0 550 550"  xml:space="preserve">
-                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
-                                        c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
-                                        c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
-                                        s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
-                                        C512,93.417,453.532,30,376,30z"/>
-                                    <defs>
-                                        <linearGradient>
-                                            <stop offset="0%" stop-color="#9356DC" />
-                                            <stop offset="100%" stop-color="#FF79DA" />
-                                        </linearGradient>
-                                    </defs>                                   
-                                </svg>
-                            </div>     
-                        </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
                 <!-- r4_délice des sens-->
-                <a href="pages/le-delice-des-sens.html">
-                    <div class="restaurant__card">
-                        <div class="restaurant__card-image">
-                            <img src="Images-Maquettes/images/restaurants/le_delice_des_sens.jpg" alt="Le délice des sens">
+                <div class="restaurants-cards">
+                    <a href="pages/le-delice-des-sens.html">
+                        <img src="Images-Maquettes/images/restaurants/le_delice_des_sens.jpg" alt="Le délice des sens">
+                        <div class="description">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                            <i class="far fa-heart"></i>
                         </div>
-                        <div class="restaurant__block">
-                            <div class="restaurant__block-info">
-                                <div class="restaurant__block-name">Le délice des sens</div>
-                                <div class="restaurant__block-city">Folie-Méricourt</div>
-                            </div>
-                            <div class="restaurant__block-hearth">
-                                <svg class="heart heart-full" viewBox="-20 0 550 550"  xml:space="preserve">
-                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
-                                        c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
-                                        c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
-                                        s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
-                                        C512,93.417,453.532,30,376,30z"/>
-                                    <defs>
-                                        <linearGradient>
-                                            <stop offset="0%" stop-color="#9356DC"/>
-                                            <stop offset="100%" stop-color="#FF79DA"/>
-                                        </linearGradient>
-                                    </defs>                                   
-                                </svg>
-                    
-                                <svg class="heart heart-empty" viewBox="-20 0 550 550"  xml:space="preserve">
-                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
-                                        c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
-                                        c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
-                                        s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
-                                        C512,93.417,453.532,30,376,30z"/>
-                                    <defs>
-                                        <linearGradient>
-                                            <stop offset="0%" stop-color="#9356DC"/>
-                                            <stop offset="100%" stop-color="#FF79DA"/>
-                                        </linearGradient>
-                                    </defs>                                   
-                                </svg>
-                            </div>     
-                        </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </section>
     </main>

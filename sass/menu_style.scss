@@ -191,7 +191,7 @@ header {
         margin: 50px 0;
         font-size: 18px;
         &:hover {
-            @include button-hover;
+            @include btn-hover;
         }
     }
 }

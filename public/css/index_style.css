@@ -1,14 +1,12 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   background: #f6f6f6;
 }
-
 * a {
   text-decoration: none;
   color: white;
 }
-
 .main {
   margin: 0;
   padding: 0;
@@ -17,7 +15,6 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
 /* loader */
 .lds-ripple {
   display: inline-block;
@@ -25,19 +22,16 @@ body {
   width: 5rem;
   height: 5rem;
 }
-
 .lds-ripple div {
   position: absolute;
-  border: 4px solid #9356DC;
+  border: 4px solid #9356dc;
   opacity: 1;
   border-radius: 50%;
   animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
-
 .lds-ripple div:nth-child(2) {
   animation-delay: -0.5s;
 }
-
 @keyframes lds-ripple {
   0% {
     top: 2.25rem;
@@ -45,18 +39,18 @@ body {
     width: 0;
     height: 0;
     opacity: 1;
-  }
+ }
   100% {
     top: 0px;
     left: 0px;
     width: 4.5rem;
     height: 4.5rem;
     opacity: 0;
-  }
+ }
 }
 /* HEADER */
 .header {
-  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.20);
   position: relative;
   display: flex;
   justify-content: center;
@@ -65,11 +59,10 @@ body {
   width: 100%;
 }
 .header__title {
-  font-family: "Shrikhand", cursive;
+  font-family: 'Shrikhand', cursive;
   margin: 0;
   color: black;
 }
-
 /* MAIN */
 .main {
   margin: 0;
@@ -79,7 +72,6 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
 /* localisation */
 .localisation {
   display: flex;
@@ -92,7 +84,6 @@ body {
   margin-left: 1rem;
   font-weight: 400;
 }
-
 /* introduction */
 .introduction {
   background: #fafafa;
@@ -117,7 +108,7 @@ body {
 }
 .introduction__btn {
   opacity: 1;
-  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  background: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
   color: white;
   padding: 0 20px;
   border-radius: 200px;
@@ -129,7 +120,6 @@ body {
   transition: 0.3s;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
 }
-
 /* process */
 .process__contain {
   padding: 25px 0;
@@ -140,7 +130,6 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
 .process {
   width: 95%;
   max-width: 1200px;
@@ -168,10 +157,10 @@ body {
   cursor: pointer;
   transition: 0.3s;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-  background: white;
+  background: #fff;
 }
 .process__number {
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
   position: absolute;
   padding: 3px 8px 3px 8px;
@@ -179,7 +168,7 @@ body {
   transform: translateX(-50%);
 }
 .process__icon {
-  color: #7E7E7E;
+  color: #7e7e7e;
   margin: 0 20px;
 }
 .process__steps {
@@ -187,130 +176,123 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-
 /* restaurants */
 .restaurants {
-  margin: 0;
-  background: #f6f6f6;
-  padding: 20px;
-  max-width: 1200px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  background: #f3f3f3;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-
-.restaurant {
-  /*
-      &-hearth {
-          @include flexbox-center;
-          margin-right: 20px;
-          width: 30px;
-      }
-      .heart {
-          width: 30px;
-          stroke-width: 30;
-          stroke: black;
-          fill: white;
-          cursor: pointer;
-        }
-        .heart-full {
-        position: absolute;
-        fill: url(#text-fill);
-        stroke: none;
-      }
-      .heart-empty {
-          width: 50px;
-          position: relative; 
-          &:hover {
-            opacity: 0;
-            transition: 0.5s;
-          }
-      }
-  }
-  */
+.restaurants h2 {
+  margin-left: 150px;
+  font-size: 26px;
+  font-weight: bold;
 }
-.restaurant__cards {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
-  padding: 20px;
+@media (max-width: 450px) {
+  .restaurants h2 {
+    margin-left: 10px;
+ }
 }
-.restaurant__card {
+.restaurants .restaurants_container {
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.restaurants .restaurants_container .restaurants-cards {
+  margin-top: 50px;
+  margin-right: 10px;
+  width: 700px;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  border-radius: 20px;
-  transform: scale(1);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  height: 300px;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 6px 3px #b4b4b4;
 }
-.restaurant__card-new {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 1616px) {
+  .restaurants .restaurants_container .restaurants-cards {
+    width: 400px;
+    height: 300px;
+ }
+}
+@media (max-width: 1089px) {
+  .restaurants .restaurants_container .restaurants-cards {
+    width: 90%;
+    height: 300px;
+ }
+}
+@media (max-width: 450px) {
+  .restaurants .restaurants_container .restaurants-cards {
+    width: 100%;
+    height: 250px;
+ }
+}
+.restaurants .restaurants_container .restaurants-cards:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.01);
+  box-shadow: 4px 4px 7px 4px #b4b4b4;
+}
+.restaurants .restaurants_container .restaurants-cards a {
+  cursor: pointer;
+}
+.restaurants .restaurants_container .restaurants-cards a span {
+  display: block;
+  width: auto;
   position: absolute;
-  background: #99e2d0;
-  top: 20px;
-  right: 20px;
-}
-.restaurant__card-new p {
+  right: 15px;
+  top: 15px;
+  justify-content: initial;
+  background: var(--green);
   color: #1b6150;
-  padding: 10px 20px;
-  margin: 0;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
 }
-.restaurant__card:hover {
-  transition: 0.5s;
-  transform: scale(1.02);
-  box-shadow: 0px 0px 10px 2px rgba(147, 86, 220, 0.6);
-}
-.restaurant__card-image {
+.restaurants .restaurants_container .restaurants-cards a img {
+  height: 220px;
   width: 100%;
-  height: 190px;
-}
-.restaurant__card-image > img {
-  width: 100%;
-  height: 100%;
+  border-radius: 1rem 1rem 0 0;
   object-fit: cover;
-  border-radius: 20px 20px 0 0;
 }
-.restaurant__block {
-  background: white;
+@media (max-width: 1089px) {
+  .restaurants .restaurants_container .restaurants-cards a img {
+    width: 100%;
+    height: 220px;
+ }
+}
+@media (max-width: 450px) {
+  .restaurants .restaurants_container .restaurants-cards a img {
+    width: 100%;
+    height: 180px;
+ }
+}
+.restaurants .restaurants_container .restaurants-cards a .description {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 90px;
-  border-radius: 0 0 20px 20px;
+  padding: 10px 20px;
 }
-.restaurant__block-info {
-  color: black;
-  margin-left: 20px;
+.restaurants .restaurants_container .restaurants-cards a .description h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 5px;
 }
-.restaurant__block-info > :first-child {
-  font-weight: 700;
-}
-.restaurant .restaurant__heart i {
+.restaurants .restaurants_container .restaurants-cards a .description p {
   position: absolute;
   padding-top: 50px;
   color: #333;
 }
-.restaurant .restaurant__heart .far.fa-heart {
+.restaurants .restaurants_container .restaurants-cards a .description .far.fa-heart {
   color: #333;
   font-size: 30px;
   opacity: 1;
   transition: 0.2s ease-out;
 }
 @media (max-width: 991px) {
-  .restaurant .restaurant__heart .far.fa-heart {
+  .restaurants .restaurants_container .restaurants-cards a .description .far.fa-heart {
     font-size: 26px;
-  }
+ }
 }
-.restaurant .restaurant__heart .far.fa-heart:hover {
+.restaurants .restaurants_container .restaurants-cards a .description .far.fa-heart:hover {
   animation: 0.3s ease-in-out;
   display: inline-block;
   opacity: 1;
@@ -321,7 +303,6 @@ body {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
-
 /* FOOTER */
 .footer {
   width: 100%;
@@ -337,7 +318,7 @@ body {
   max-width: 1200px;
 }
 .footer__bloc .logo {
-  font-family: "Shrikhand", cursive;
+  font-family: 'Shrikhand', cursive;
   color: white;
   font-size: 20px;
   padding: 15px 0;
