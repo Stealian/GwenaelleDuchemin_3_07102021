@@ -181,6 +181,7 @@ header .header__logo a {
 }
 .menu__case__price {
   padding-right: 20px;
+  padding-top: 20px;
   font-weight: bold;
   padding-left: 7px;
 }
