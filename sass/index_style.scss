@@ -2,32 +2,19 @@
 @import "variables.scss";
 
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    background: #f6f6f6;
-    
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background: #f6f6f6;
 }
-
-* a {
-    text-decoration: none;
-    color: white;
-}
-
-.main {
-    margin: 0;
-    padding: 0;
-    @include flexbox-center;
-    flex-direction: column;
-}
-
 /* loader */
 .loader-contain {
   position: fixed;
+  margin: 47%;
   height: 100%;
   width: 100%;
   left: 0;
   top: 0;
-  background: white;
+  background-color: white;
   animation: loader 0.05s;
   animation-delay: 3s;
   animation-duration: 3s;
@@ -38,20 +25,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  .loader {
-    display: inline-block;
-    display: flex;
-    width: 5rem;
-    height: 5rem;
-  }
-  .loader div {
+}
+.loader {
+  display: inline-block;
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  div {
     position: absolute;
     border: 4px solid $color-primary;
     opacity: 1;
     border-radius: 50%;
     animation: loader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
   }
-  .loader div:nth-child(2) {
+  div:nth-child(2) {
     animation-delay: -0.5s;
   }
   @keyframes loader {
@@ -72,17 +59,28 @@ body {
   }
 }
 
+* a {
+  text-decoration: none;
+  color: white;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  @include flexbox-center;
+  flex-direction: column;
+}
 /* HEADER */
 .header {
-  box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.20);
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
   position: relative;
   @include flexbox-center();
   height: 5rem;
   width: 100%;
   &__title {
-      font-family: 'Shrikhand', cursive;
-      margin: 0;
-      color: black;
+    font-family: "Shrikhand", cursive;
+    margin: 0;
+    color: black;
   }
 }
 
@@ -101,39 +99,39 @@ body {
   color: #7a7a7a;
 
   &__city {
-      margin-left: 1rem;
-      font-weight: 400;
+    margin-left: 1rem;
+    font-weight: 400;
   }
 }
 
- /* introduction */
+/* introduction */
 .introduction {
   background: #fafafa;
   width: 100%;
   &__container {
-      width: 100%;
-      padding: 20px;
-      @include flexbox-center();
-      flex-direction: column;
-      padding: 50px 0;
+    width: 100%;
+    padding: 20px;
+    @include flexbox-center();
+    flex-direction: column;
+    padding: 50px 0;
   }
   &__title {
-      text-align: center;
-      max-width: 250px;
-      margin: 0;
+    text-align: center;
+    max-width: 250px;
+    margin: 0;
   }
   &__text {
-      text-align: center;
+    text-align: center;
   }
   &__btn {
-      @include btn-style;
-      &:hover {
-          @include btn-hover;
-      }
+    @include btn-style;
+    &:hover {
+      @include btn-hover;
+    }
   }
 }
 
- /* process */
+/* process */
 .process__contain {
   padding: 25px 0;
   width: 100%;
@@ -146,148 +144,144 @@ body {
   width: 95%;
   max-width: 1200px;
   background-color: white;
-  padding: 0 ;   
+  padding: 0;
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   &__title {
-      margin: 0;
+    margin: 0;
   }
   &__step {
-      display: flex;
-      align-items: center;
-      background: #f6f6f6;
-      height: auto;
-      width: auto;
-      margin: 10px 20px;
-      border-radius: 20px;
-      position: relative;
-      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.16);
+    display: flex;
+    align-items: center;
+    background: #f6f6f6;
+    height: auto;
+    width: auto;
+    margin: 10px 20px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
   }
-      &__number {
-              background-color: $color-primary;
-              color: white;
-              position: absolute;
-              padding: 3px 8px 3px 8px;
-              border-radius: 500px;
-              transform: translateX(-50%);
-          }
-      &__icon {
-          color: #7E7E7E;
-          margin: 0 20px;
-      }
+  &__number {
+    background-color: $color-primary;
+    color: white;
+    position: absolute;
+    padding: 3px 8px 3px 8px;
+    border-radius: 500px;
+    transform: translateX(-50%);
+  }
+  &__icon {
+    color: #7e7e7e;
+    margin: 0 20px;
+  }
   &__steps {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
 /* restaurants */
-.restaurants{
+.restaurants {
   display: flex;
   flex-wrap: wrap;
-  background: #F3F3F3;
+  background: #f3f3f3;
   padding-top: 50px;
   padding-bottom: 50px;
 
-h2{
-  margin-left: 150px;
-  font-size: 26px;
-  font-weight: bold;
+  h2 {
+    margin-left: 150px;
+    font-size: 26px;
+    font-weight: bold;
 
-  @media (max-width: 450px){
-    margin-left: 10px;
+    @media (max-width: 450px) {
+      margin-left: 10px;
+    }
   }
-}
 
-.restaurant__contain{
+  .restaurant__contain {
     padding-left: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-  .restaurants__cards{
-    margin-top: 50px;
-    margin-right: 10px;
-    width: 700px;
-    position: relative;
-    height: 300px;
-    border-radius: 1rem;
-    box-shadow: 3px 3px 6px 3px rgb(180, 180, 180);
-    @media (max-width: 1616px){
-      width: 400px;
-      height:300px;
-    }
-    @media (max-width: 1089px){
-      width: 90%;
-      height: 300px
-    }
-    @media (max-width: 450px){
-       width: 100%;
-       height: 280px;
-    }
-    &:hover{
-      transition: all 0.2s ease-in-out;
-      transform: scale(1.01);
-      box-shadow: 4px 4px 7px 4px rgb(180, 180, 180);
-    }
-   
-    a{
-      cursor: pointer;
-      span{
-        display:block;
-        width: auto;
-        position: absolute;
-        right:15px;
-        top: 15px;
-        justify-content:initial;
-        background: $color-tertiary;
-        color: #1b6150;
-        padding: .5rem;
-        border-radius: .2rem;
-      } 
-      img{
-        height: 220px;
+    .restaurants__cards {
+      margin-top: 50px;
+      margin-right: 10px;
+      width: 700px;
+      position: relative;
+      height: 300px;
+      border-radius: 1rem;
+      box-shadow: 3px 3px 6px 3px rgb(180, 180, 180);
+      @media (max-width: 1616px) {
+        width: 400px;
+        height: 300px;
+      }
+      @media (max-width: 1089px) {
+        width: 90%;
+        height: 300px;
+      }
+      @media (max-width: 450px) {
         width: 100%;
-        border-radius: 1rem 1rem 0 0;
-        object-fit: cover;
-
-        @media (max-width: 1089px){
-          width: 100%;
-          height: 220px;
-        }
-        @media (max-width: 450px){
-          width: 100%;
-          height: 180px;
-       }
+        height: 280px;
+      }
+      &:hover {
+        transition: all 0.2s ease-in-out;
+        transform: scale(1.01);
+        box-shadow: 4px 4px 7px 4px rgb(180, 180, 180);
       }
 
-      .description{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5px 20px;
-
-        h3{
-          font-size: 20px;
-          color: #333;
-          margin-bottom: 5px;
-        }
-
-        p{
+      a {
+        cursor: pointer;
+        span {
+          display: block;
+          width: auto;
           position: absolute;
-          padding-top: 50px;
-          color: #333;
+          right: 15px;
+          top: 15px;
+          justify-content: initial;
+          background: $color-tertiary;
+          color: #1b6150;
+          padding: 0.5rem;
+          border-radius: 0.2rem;
+        }
+        img {
+          height: 220px;
+          width: 100%;
+          border-radius: 1rem 1rem 0 0;
+          object-fit: cover;
+
+          @media (max-width: 1089px) {
+            width: 100%;
+            height: 220px;
+          }
+          @media (max-width: 450px) {
+            width: 100%;
+            height: 180px;
+          }
         }
 
-        @import "heart.scss";
-         
+        .description {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 5px 20px;
+
+          h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 5px;
+          }
+
+          p {
+            position: absolute;
+            padding-top: 50px;
+            color: #333;
+          }
+
+          @import "heart.scss";
+        }
       }
-
     }
-
-   
   }
-}
 }
 /* FOOTER */
 @import "footer.scss";
