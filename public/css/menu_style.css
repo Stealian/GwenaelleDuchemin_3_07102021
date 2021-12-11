@@ -324,3 +324,15 @@ header .header__logo a {
   font-size: 16px;
   font-weight: 400;
 }
+
+@media screen and (min-width: 800px) {
+  .footer__bloc {
+    margin-bottom: 20px;
+  }
+  .footer__bloc-links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 900px;
+  }
+}
