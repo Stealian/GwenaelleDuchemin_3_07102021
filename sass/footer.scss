@@ -39,3 +39,16 @@
         }
     }
 }
+@media screen and (min-width: 800px) {
+    .footer {
+        &__bloc {
+            margin-bottom: 20px;
+            &-links {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                max-width: 900px;
+            }
+        }
+    }
+}
