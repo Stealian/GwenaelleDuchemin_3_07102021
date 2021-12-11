@@ -6,8 +6,13 @@ body {
   margin: 0;
   background: #f6f6f6;
 }
+* a {
+  text-decoration: none;
+  color: white;
+}
 /* loader */
 .loader-contain {
+  background-color: white;
   position: fixed;
   margin-left: 47%;
   margin-top: 17%;
@@ -15,7 +20,6 @@ body {
   width: 100%;
   left: 0;
   top: 0;
-  background-color: white;
   animation: loader 0.05s;
   animation-delay: 3s;
   animation-duration: 3s;
@@ -58,11 +62,6 @@ body {
       opacity: 0;
     }
   }
-}
-
-* a {
-  text-decoration: none;
-  color: white;
 }
 
 .main {
