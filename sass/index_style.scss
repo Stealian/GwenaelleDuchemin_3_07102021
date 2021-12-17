@@ -13,18 +13,18 @@ body {
   color: white;
 }
 /* loader */
-@import "loader.scss";
-/*.loader-contain {
+/*@import "loader.scss";*/
+ .loader-contain {
   background-color: white;
   position: fixed;
   min-width: 100%;
   min-height: 100vh;
-  animation: loader 0.05s;
+  /*animation: loader 0.05s;
   animation-delay: 3s;
   animation-duration: 3s;
   transition-duration: 2.5s;
   transition-property: 0.5s;
-  animation-fill-mode: both;
+  animation-fill-mode: both;*/
   z-index: 10000;
   display: flex;
   align-items: center;
@@ -62,7 +62,7 @@ body {
       opacity: 0;
     }
   }
-}*/
+}
 
 .main {
   margin: 0;
@@ -149,7 +149,7 @@ body {
   flex-direction: column;
   &__title {
     margin: 0;
-    text-align: right;
+    text-align: left ;
   }
   &__step {
     display: flex;
