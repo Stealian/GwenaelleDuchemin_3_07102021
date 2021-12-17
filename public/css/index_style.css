@@ -1,7 +1,9 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
+  padding: 0;
   background: #f6f6f6;
+  text-align: center;
 }
 
 * a {
@@ -10,7 +12,59 @@ body {
 }
 
 /* loader */
-.loader-contain {
+.contain {
+  background: white;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.loader {
+  animation: loader 0.05s;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  transition-duration: 2.5s;
+  transition-property: 0.5s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+}
+.loader__animation {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.loader__animation div {
+  position: absolute;
+  border: 4px solid #9356DC;
+  opacity: 1;
+  border-radius: 50%;
+  animation: loader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.loader__animation div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes loader {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+/*.loader-contain {
   background-color: white;
   position: fixed;
   min-width: 100%;
@@ -26,41 +80,39 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .loader {
   display: inline-block;
   display: flex;
   width: 5rem;
   height: 5rem;
   align-content: center;
-}
-.loader div {
-  position: absolute;
-  border: 4px solid #9356DC;
-  opacity: 1;
-  border-radius: 50%;
-  animation: loader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-}
-.loader div:nth-child(2) {
-  animation-delay: -0.5s;
-}
-@keyframes loader {
-  0% {
-    top: 2.25rem;
-    left: 2.25rem;
-    width: 0;
-    height: 0;
+  div {
+    position: absolute;
+    border: 4px solid $color-primary;
     opacity: 1;
+    border-radius: 50%;
+    animation: loader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
   }
-  100% {
-    top: 0px;
-    left: 0px;
-    width: 4.5rem;
-    height: 4.5rem;
-    opacity: 0;
+  div:nth-child(2) {
+    animation-delay: -0.5s;
   }
-}
-
+  @keyframes loader {
+    0% {
+      top: 2.25rem;
+      left: 2.25rem;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 4.5rem;
+      height: 4.5rem;
+      opacity: 0;
+    }
+  }
+}*/
 .main {
   margin: 0;
   padding: 0;
