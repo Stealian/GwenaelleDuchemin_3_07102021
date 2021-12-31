@@ -157,7 +157,7 @@ body {
 
 .process {
   width: 95%;
-  max-width: 1200px;
+  max-width: 1024px;
   background-color: white;
   padding: 0;
   display: flex;
@@ -210,12 +210,13 @@ body {
   max-width: 1024px;
 
   h2 {
-    margin-left: 150px;
-    font-size: 26px;
     font-weight: bold;
 
-    @media (max-width: 450px) {
+    @media (max-width: 425px) {
       margin-left: 10px;
+    }
+    @media (min-width: 426px) and (max-width: 1024px) {
+      margin-left: 20px;
     }
   }
 
@@ -232,12 +233,8 @@ body {
       height: 300px;
       border-radius: 1rem;
       box-shadow: 3px 3px 6px 3px rgb(180, 180, 180);
-      @media (max-width: 1440px) {
-        width: 400px;
-        height: 300px;
-      }
-      @media (max-width: 1024px) {
-        width: 90%;
+      @media (min-width: 426px) {
+        max-width: 90%;
         height: 300px;
       }
       @media (max-width: 425px) {
