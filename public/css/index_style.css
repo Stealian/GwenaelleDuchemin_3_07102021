@@ -312,7 +312,11 @@ body {
   transition: .3s;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-  background: white;
+  background: #E4CEFF;
+}
+
+.process__step:hover .process__icon {
+  color: #9356DC;
 }
 
 .process__number {
@@ -328,6 +332,10 @@ body {
 .process__icon {
   color: #7e7e7e;
   margin: 0 20px;
+  /*&:hover {
+      @include btn-hover;
+      color: $color-primary;
+    }*/
 }
 
 .process__steps {
@@ -596,12 +604,6 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     max-width: 1440px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .footer {
-    text-align: left;
   }
 }
 /*# sourceMappingURL=index_style.css.map */
