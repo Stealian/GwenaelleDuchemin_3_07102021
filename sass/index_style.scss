@@ -178,7 +178,10 @@ body {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
     &:hover {
       @include btn-hover;
-      background: lighten(#f7f7f7, 3%);
+      background: #E4CEFF;
+      .process__icon{
+        color: $color-primary;
+      }
     }
   }
   &__number {
@@ -192,6 +195,10 @@ body {
   &__icon {
     color: #7e7e7e;
     margin: 0 20px;
+    /*&:hover {
+      @include btn-hover;
+      color: $color-primary;
+    }*/
   }
   &__steps {
     display: flex;
